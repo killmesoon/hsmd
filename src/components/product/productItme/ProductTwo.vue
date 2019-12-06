@@ -1,5 +1,15 @@
 <template>
-    <div>华视互娱</div>
+    <div class="product-h6">
+        <div class="item-one">
+            <img src="../../../assets/img/product/hy1.jpg" alt="">
+        </div>
+        <div class="item-one">
+            <img src="../../../assets/img/product/hy2.jpg" alt="">
+        </div>
+        <div class="item-one">
+            <img src="../../../assets/img/product/hy3.jpg" alt="">
+        </div>
+    </div>
 </template>
 
 <script>
@@ -9,5 +19,7 @@
 </script>
 
 <style scoped>
-
+    .product-h6 {
+        clear: both;
+    }
 </style>

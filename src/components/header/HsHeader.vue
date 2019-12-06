@@ -8,7 +8,7 @@
             <ul class="nav">
                 <li><router-link to="/dashboard">首页</router-link></li>
                 <li><router-link to="/product">产品介绍</router-link></li>
-                <li><router-link to="/test">业务案例</router-link></li>
+                <li><router-link to="/business">业务案例</router-link></li>
                 <li><router-link to="/test2">服务范围</router-link></li>
                 <li><router-link to="/test3">关于我们</router-link></li>
                 <li><router-link to="/test4">新闻中心</router-link></li>

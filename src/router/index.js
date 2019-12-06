@@ -10,6 +10,8 @@ import ProductFour from '../components/product/productItme/ProductFour'
 import ProductFive from '../components/product/productItme/ProductFive'
 import ProductSix from '../components/product/productItme/ProductSix'
 
+import Business from '../components/business/Business'
+
 /**
  * 定义路由
  * @type {{path: string, component: {name}}[]}
@@ -57,6 +59,10 @@ const routes = [
                 component: ProductSix
             },
         ]
+    },
+    {
+        path: '/business',
+        component: Business
     }
 ]
 Vue.use(VueRouter)

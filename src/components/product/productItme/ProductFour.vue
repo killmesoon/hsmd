@@ -1,5 +1,9 @@
 <template>
-    <div>多维投屏网关</div>
+    <div class="product-h6">
+        <div class="item-one">
+            <img src="../../../assets/img/product/dw.jpg" alt="">
+        </div>
+    </div>
 </template>
 
 <script>

@@ -68,6 +68,9 @@
                 </div>
             </div>
         </div>
+        <div>
+            <hs-scroll></hs-scroll>
+        </div>
 
 
         <div class="business-item-title" style="clear: both">
@@ -142,6 +145,7 @@
 
 <script>
     import Swiper from 'swiper'
+    import HsScroll from '../scroll/HsScroll'
     //banner导入
     const banner = require("../../assets/img/BANNER.jpg")
     const banner1 = require("../../assets/img/BANNER1.jpg")
@@ -285,6 +289,9 @@
                         break;
                 }
             }
+        },
+        components: {
+            HsScroll
         }
     }
 </script>

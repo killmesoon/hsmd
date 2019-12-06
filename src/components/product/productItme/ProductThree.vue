@@ -1,5 +1,12 @@
 <template>
-    <div>华视云朵</div>
+    <div class="product-h6">
+        <div class="item-one">
+            <img src="../../../assets/img/product/yd1.png" alt="">
+        </div>
+        <div class="item-one">
+            <img src="../../../assets/img/product/yd2.png" alt="">
+        </div>
+    </div>
 </template>
 
 <script>

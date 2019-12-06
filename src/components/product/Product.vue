@@ -23,6 +23,7 @@
         </ul>
         <div class="produce-item">
             <router-view></router-view>
+            <div style="clear: both"></div>
         </div>
         </div>
     </div>
@@ -43,8 +44,7 @@
     }
     .nav {
         position: absolute;
-        top: 20px;
-        left: 10%;
+        left: 20%;
     }
     .nav li {
         list-style-type: none;
@@ -66,15 +66,11 @@
         opacity: 0.5;
     }
     .produce-wrapper {
-        position: relative;
-        height: 1200px;
+
     }
 
     .produce-item {
         width: 70%;
-        position: absolute;
-        left: calc(10% + 120px);
-        height: 500px;
-        top: 20px;
+        margin-left: calc(20% + 120px);
     }
 </style>
