@@ -10,8 +10,8 @@
                 <li><router-link to="/product">产品介绍</router-link></li>
                 <li><router-link to="/business">业务案例</router-link></li>
                 <li><router-link to="/serviceRange">服务范围</router-link></li>
-                <li><router-link to="/test3">关于我们</router-link></li>
-                <li><router-link to="/test4">新闻中心</router-link></li>
+                <li><router-link to="/history">发展历程</router-link></li>
+                <li><router-link to="/news">新闻中心</router-link></li>
                 <li><router-link to="/contactUs">联系我们</router-link></li>
             </ul>
         </div>

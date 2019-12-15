@@ -22,6 +22,17 @@ import ServiceRange from '../components/service/ServiceRange'
  */
 import ContactUs from '../components/contact/ContactUs'
 
+
+/**
+ * 发展历程
+ */
+import HsHistory from '../components/history/HsHistory'
+
+/**
+ * 新闻中心
+ */
+import NewsCenter from '../components/news/NewsCenter'
+
 /**
  * 定义路由
  * @type {{path: string, component: {name}}[]}
@@ -81,6 +92,14 @@ const routes = [
     {
         path: '/contactUs',
         component: ContactUs
+    },
+    {
+        path: '/history',
+        component: HsHistory
+    },
+    {
+        path: '/news',
+        component: NewsCenter
     }
 ]
 Vue.use(VueRouter)

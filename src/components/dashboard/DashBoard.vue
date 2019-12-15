@@ -140,6 +140,79 @@
             </div>
             <span><strong>News Center</strong></span>
         </div>
+        <div class="news-container">
+            <div class="news-item">
+                <div class="news">
+                    <div class="news-wrapper">
+                        <div class="news-wrapper-img">
+                            <img src="../../assets/img/news/news4.jpg" alt="">
+                        </div>
+                        <div class="news-wrapper-text">
+                            <p style="color: #eec13f">华视美达亮相Hotel Plus2019</p>
+                            <p style="color: #7f7f7f">2019-03-01</p>
+                            <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相上海国际酒店工程设计与用品博览会，本次华视美达主要展示小美AI场景机器人、华视云朵&点播分成平台以及9款UI和...</p>
+                        </div>
+                        <div class="new-more">
+                            <img src="../../assets/img/news/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-wrapper">
+                        <div class="news-wrapper-img">
+                            <img src="../../assets/img/news/news3.jpg" alt="">
+                        </div>
+                        <div class="news-wrapper-text">
+                            <p style="color: #eec13f">华视美达亮相CCBN</p>
+                            <p style="color: #7f7f7f">2019-04-25</p>
+                            <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相《上海国际酒店
+                                工程设计与用品博览会。</p>
+                        </div>
+                        <div class="new-more">
+                            <img src="../../assets/img/news/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-container">
+            <div class="news-item">
+                <div class="news">
+                    <div class="news-wrapper">
+                        <div class="news-wrapper-img">
+                            <img src="../../assets/img/news/news2.jpg" alt="">
+                        </div>
+                        <div class="news-wrapper-text">
+                            <p style="color: #eec13f">青岛海信史总莅临华视美达考察</p>
+                            <p style="color: #7f7f7f">2018-12-19</p>
+                            <p style="text-indent:2em;line-height: 28px;">2018年12月19日，青岛海信电器营销股份有限公司
+                                史全华先生莅临华视美达郑州公司进行考察，就双方技术
+                                合作达成共识</p>
+                        </div>
+                        <div class="new-more">
+                            <img src="../../assets/img/news/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-wrapper">
+                        <div class="news-wrapper-img">
+                            <img src="../../assets/img/news/news1.jpg" alt="">
+                        </div>
+                        <div class="news-wrapper-text">
+                            <p style="color: #eec13f">2019年新品发布暨渠道伙伴联营大会</p>
+                            <p style="color: #7f7f7f">2019-08-29</p>
+                            <p style="text-indent:2em;line-height: 28px;">2019年8月29日，深圳华视美达信息技术有限公司
+                                召开《2019年新品发布暨合作渠道伙伴联营大会》。</p>
+                        </div>
+                        <div class="new-more">
+                            <img src="../../assets/img/news/more.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -406,6 +479,46 @@
         height: 499px;
         background: url("../../assets/img/about-us.jpg") no-repeat;
         background-size: 100% 100%;
+    }
+
+    .news-container {
+        width: 100%;
+        height: 300px;
+    }
+    .news-item {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        height: 100%;
+    }
+    .news {
+        flex: 1;
+    }
+    .news-wrapper {
+        position: relative;
+        width: 90%;
+        height: 80%;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+    .news-wrapper-img {
+        position: absolute;
+        left: 20px;
+        top: 40px;
+    }
+    .news-wrapper-img img {
+        width: 233px;
+        height: 155px;
+    }
+    .news-wrapper-text {
+        position: absolute;
+        left: 270px;
+        top: 40px;
+    }
+    .new-more {
+        position: absolute;
+        bottom: 50px;
+        right: 10px;
     }
 
 </style>
