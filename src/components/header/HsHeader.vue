@@ -12,7 +12,7 @@
                 <li><router-link to="/serviceRange">服务范围</router-link></li>
                 <li><router-link to="/test3">关于我们</router-link></li>
                 <li><router-link to="/test4">新闻中心</router-link></li>
-                <li><router-link to="/test5">联系我们</router-link></li>
+                <li><router-link to="/contactUs">联系我们</router-link></li>
             </ul>
         </div>
     </div>

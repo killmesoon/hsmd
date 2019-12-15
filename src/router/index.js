@@ -18,6 +18,11 @@ import Business from '../components/business/Business'
 import ServiceRange from '../components/service/ServiceRange'
 
 /**
+ * 联系我们
+ */
+import ContactUs from '../components/contact/ContactUs'
+
+/**
  * 定义路由
  * @type {{path: string, component: {name}}[]}
  */
@@ -72,6 +77,10 @@ const routes = [
     {
         path: '/serviceRange',
         component: ServiceRange
+    },
+    {
+        path: '/contactUs',
+        component: ContactUs
     }
 ]
 Vue.use(VueRouter)

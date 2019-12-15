@@ -1,0 +1,65 @@
+/*顶部banner图*/
+.topBanner{
+    width: 100%;
+    height:auto;
+}
+.topBanner img{
+    width: 100%;
+    height: auto;
+}
+/*中间内容*/
+.cenerContent{
+    width: 1200px;
+    height: auto;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.location{
+    padding: 80px 60px 80px 110px;
+    box-sizing: border-box;
+    display: flex;
+}
+.map{
+    width: 496px;
+    height: 388px;
+    background-color: #f6f6f6;
+}
+.information{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: #333;
+    line-height: 40px;
+    margin-left: 66px;
+}
+.information a{
+    color: #333;
+    text-decoration: none;
+}
+.informationLocation{
+    margin: 50px 0;
+}
+.branchList{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 486px;
+}
+.branchRight{
+    padding-left:76px;
+}
+.listItem{
+    margin-bottom: 50px;
+}
+.listName{
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: #333;
+    margin-bottom: 15px;
+}
+.listName img{
+    margin-right:16px;
+}
+.branch{
+    padding: 0 110px 100px 110px;
+    box-sizing: border-box;
+}

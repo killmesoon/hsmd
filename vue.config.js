@@ -1,3 +1,4 @@
+
 module.exports = {
     publicPath: './',
     assetsDir: 'static',
@@ -7,6 +8,6 @@ module.exports = {
             use: [{
                 loader: 'sass-loader'
             }]
-        })
+        });
     }
 }
