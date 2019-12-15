@@ -13,6 +13,11 @@ import ProductSix from '../components/product/productItme/ProductSix'
 import Business from '../components/business/Business'
 
 /**
+ * 服务服务范围
+ */
+import ServiceRange from '../components/service/ServiceRange'
+
+/**
  * 定义路由
  * @type {{path: string, component: {name}}[]}
  */
@@ -63,6 +68,10 @@ const routes = [
     {
         path: '/business',
         component: Business
+    },
+    {
+        path: '/serviceRange',
+        component: ServiceRange
     }
 ]
 Vue.use(VueRouter)
