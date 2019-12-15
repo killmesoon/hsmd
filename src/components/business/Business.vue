@@ -31,12 +31,17 @@
                 </div>
             </div>
         </div>
+        <hs-scroll></hs-scroll>
     </div>
 </template>
 
 <script>
+    import HsScroll from '../scroll/HsScroll'
     export default {
-        name: "Business"
+        name: "Business",
+        components: {
+            HsScroll
+        }
     }
 </script>
 
