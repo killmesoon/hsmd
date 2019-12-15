@@ -10,27 +10,27 @@
 
 
         <div class="wrapper-item">
-            <div class="item-container" @mouseover="changeIndex(1)" @mouseout="changeBack(1)">
+            <div class="item-container" @mouseover="changeIndex(1)" @click="goToProduct(1)" @mouseout="changeBack(1)">
                 <div class="item-container-img">
                     <img :src="item1Src" alt="">
                 </div>
             </div>
-            <div class="item-container" @mouseover="changeIndex(3)" @mouseout="changeBack(3)">
+            <div class="item-container" @mouseover="changeIndex(3)" @click="goToProduct(3)" @mouseout="changeBack(3)">
                 <div class="item-container-img">
                     <img :src="item3Src" alt="">
                 </div>
             </div>
-            <div class="item-container" @mouseover="changeIndex(4)" @mouseout="changeBack(4)">
+            <div class="item-container" @mouseover="changeIndex(4)" @click="goToProduct(4)" @mouseout="changeBack(4)">
                 <div class="item-container-img">
                     <img :src="item4Src" alt="">
                 </div>
             </div>
-            <div class="item-container" @mouseover="changeIndex(5)" @mouseout="changeBack(5)">
+            <div class="item-container" @mouseover="changeIndex(5)" @click="goToProduct(5)" @mouseout="changeBack(5)">
                 <div class="item-container-img">
                     <img :src="item5Src" alt="">
                 </div>
             </div>
-            <div class="item-container" @mouseover="changeIndex(2)" @mouseout="changeBack(2)">
+            <div class="item-container" @mouseover="changeIndex(2)" @click="goToProduct(2)" @mouseout="changeBack(2)">
                 <div class="item-container-img">
                     <img :src="item2Src" alt="">
                 </div>
@@ -152,7 +152,7 @@
                             <p style="color: #7f7f7f">2019-03-01</p>
                             <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相上海国际酒店工程设计与用品博览会，本次华视美达主要展示小美AI场景机器人、华视云朵&点播分成平台以及9款UI和...</p>
                         </div>
-                        <div class="new-more">
+                        <div class="new-more" @click="goToNews">
                             <img src="../../assets/img/news/more.png" alt="">
                         </div>
                     </div>
@@ -168,7 +168,7 @@
                             <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相《上海国际酒店
                                 工程设计与用品博览会。</p>
                         </div>
-                        <div class="new-more">
+                        <div class="new-more" @click="goToNews">
                             <img src="../../assets/img/news/more.png" alt="">
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                                 史全华先生莅临华视美达郑州公司进行考察，就双方技术
                                 合作达成共识</p>
                         </div>
-                        <div class="new-more">
+                        <div class="new-more" @click="goToNews">
                             <img src="../../assets/img/news/more.png" alt="">
                         </div>
                     </div>
@@ -206,7 +206,7 @@
                             <p style="text-indent:2em;line-height: 28px;">2019年8月29日，深圳华视美达信息技术有限公司
                                 召开《2019年新品发布暨合作渠道伙伴联营大会》。</p>
                         </div>
-                        <div class="new-more">
+                        <div class="new-more" @click="goToNews">
                             <img src="../../assets/img/news/more.png" alt="">
                         </div>
                     </div>
@@ -280,6 +280,28 @@
             })
         },
         methods: {
+            goToProduct(index) {
+              switch (index) {
+                  case 1:
+                      this.$router.push("/product/h6")
+                      break;
+                  case 2:
+                      this.$router.push("/product/gq")
+                      break;
+                  case 3:
+                      this.$router.push("/product/hy")
+                      break;
+                  case 4:
+                      this.$router.push("/product/yd")
+                      break;
+                  case 5:
+                      this.$router.push("/product/wg")
+                      break;
+              }
+            },
+            goToNews () {
+                this.$router.push("/news")
+            },
             changeIndex(index) {
                 switch (index) {
                     case 1:
@@ -486,7 +508,7 @@
         height: 300px;
     }
     .news-item {
-        width: 60%;
+        width: 1205px;
         margin: 0 auto;
         display: flex;
         height: 100%;
@@ -517,8 +539,9 @@
     }
     .new-more {
         position: absolute;
-        bottom: 50px;
+        bottom: 10px;
         right: 10px;
+        cursor: pointer;
     }
 
 </style>

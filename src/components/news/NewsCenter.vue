@@ -77,7 +77,7 @@
                 :title="title"
                 :visible.sync="dialogVisible"
                 width="30%">
-            <div style="text-align: center"><img :src="dialogImg" alt=""></div>
+            <div style="text-align: center"><img width="100%" :src="dialogImg" alt=""></div>
             <div style="margin-top: 20px">
                 <p style="text-indent: 2em">{{newsText}}</p>
             </div>
@@ -158,7 +158,7 @@
     }
 
     .news-container {
-        width: 45%;
+        width: 1205px;
         margin: 0 auto;
         display: flex;
         height: 700px;

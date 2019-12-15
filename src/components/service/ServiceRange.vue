@@ -131,6 +131,7 @@
     .container-wrapper {
         margin-bottom: 10px;
         padding-top: 20px;
+        margin-top: 65px;
     }
     .left {
         padding-left: 50px;
