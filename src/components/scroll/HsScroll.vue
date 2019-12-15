@@ -80,14 +80,7 @@
                         id: 12,
                         src: s12
                     },
-                ],
-                newsList: [{
-                    'title': 'A simple, seamless scrolling for Vue.js',
-                    id: 1
-                }, {
-                    'title': 'A curated list of awesome things related to Vue.js',
-                    id: 2
-                }]
+                ]
             }
         },
         components: {
@@ -96,7 +89,7 @@
         computed: {
             optionLeft() {
                 return {
-                    direction: 3,
+                    direction: 2,
                     limitMoveNum: 5
                 }
             }
@@ -108,18 +101,19 @@
     .seamless-warp2 {
         overflow: hidden;
         height: 200px;
-        width: 1000px;
+        width: 1200px;
         margin: 0 auto;
 
         ul.item {
             margin-top: 20px;
-            width: 2300px;
+            width: 2800px;
 
             li {
                 float: left;
                 margin-right: 10px;
                 list-style-type: none;
-
+                width: 220px;
+                text-align: center;
                 img {
                     width: 180px;
                     height: 135px;
