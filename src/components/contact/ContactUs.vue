@@ -12,8 +12,8 @@
             <div class="container">
                 <div class="container-swapper">
                     <div><img :src="imgUrl1" alt="" @mouseover="changeIndexService(1)" @mouseout="changeBackService(1)"></div>
-                    <div><img :src="imgUrl2" alt="" @mouseover="changeIndexService(2)" @mouseout="changeBackService(2)"></div>
-                    <div><img :src="imgUrl3" alt="" @mouseover="changeIndexService(3)" @mouseout="changeBackService(3)"></div>
+                    <div><img :src="imgUrl2" alt="" @click="turnToWeb(1)" @mouseover="changeIndexService(2)" @mouseout="changeBackService(2)"></div>
+                    <div><img :src="imgUrl3" alt="" @click="turnToWeb(2)" @mouseover="changeIndexService(3)" @mouseout="changeBackService(3)"></div>
                 </div>
             </div>
             <div class="footer">
@@ -162,6 +162,15 @@
                     case 3:
                         this.imgUrl3 = s3;
                         break;
+                }
+            },
+            turnToWeb(index) {
+                switch (index) {
+                    case 1:
+                        window.location.href = 'http://www.hsmedia.top:9800';
+                        break
+                    case 2:
+                        window.location.href = 'http://www.hotelyunos.com';
                 }
             }
         }
