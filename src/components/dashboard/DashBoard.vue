@@ -149,46 +149,8 @@
                         </div>
                         <div class="news-wrapper-text">
                             <p style="color: #eec13f">华视美达亮相Hotel Plus2019</p>
-                            <p style="color: #7f7f7f">2019-03-01</p>
-                            <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相上海国际酒店工程设计与用品博览会，本次华视美达主要展示小美AI场景机器人、华视云朵&点播分成平台以及9款UI和...</p>
-                        </div>
-                        <div class="new-more" @click="goToNews">
-                            <img src="../../assets/img/news/more.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="news">
-                    <div class="news-wrapper">
-                        <div class="news-wrapper-img">
-                            <img src="../../assets/img/news/news3.jpg" alt="">
-                        </div>
-                        <div class="news-wrapper-text">
-                            <p style="color: #eec13f">华视美达亮相CCBN</p>
                             <p style="color: #7f7f7f">2019-04-25</p>
-                            <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相《上海国际酒店
-                                工程设计与用品博览会。</p>
-                        </div>
-                        <div class="new-more" @click="goToNews">
-                            <img src="../../assets/img/news/more.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="news-container">
-            <div class="news-item">
-                <div class="news">
-                    <div class="news-wrapper">
-                        <div class="news-wrapper-img">
-                            <img src="../../assets/img/news/news2.jpg" alt="">
-                        </div>
-                        <div class="news-wrapper-text">
-                            <p style="color: #eec13f">青岛海信史总莅临华视美达考察</p>
-                            <p style="color: #7f7f7f">2018-12-19</p>
-                            <p style="text-indent:2em;line-height: 28px;">2018年12月19日，青岛海信电器营销股份有限公司
-                                史全华先生莅临华视美达郑州公司进行考察，就双方技术
-                                合作达成共识</p>
+                            <p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相上海国际酒店工程设计与用品博览会，本次华视美达主要展示小美AI场景机器人、华视云朵&点播分成平台以及9款UI和...</p>
                         </div>
                         <div class="new-more" @click="goToNews">
                             <img src="../../assets/img/news/more.png" alt="">
@@ -211,8 +173,62 @@
                         </div>
                     </div>
                 </div>
+                <!--<div class="news">-->
+                    <!--<div class="news-wrapper">-->
+                        <!--<div class="news-wrapper-img">-->
+                            <!--<img src="../../assets/img/news/news3.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="news-wrapper-text">-->
+                            <!--<p style="color: #eec13f">华视美达亮相CCBN</p>-->
+                            <!--<p style="color: #7f7f7f">2019-04-25</p>-->
+                            <!--<p style="text-indent:2em;line-height: 28px;">2019年4月25-27日，华视美达亮相《上海国际酒店-->
+                                <!--工程设计与用品博览会。</p>-->
+                        <!--</div>-->
+                        <!--<div class="new-more" @click="goToNews">-->
+                            <!--<img src="../../assets/img/news/more.png" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
+
+        <!--<div class="news-container">-->
+            <!--<div class="news-item">-->
+                <!--&lt;!&ndash;<div class="news">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="news-wrapper">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="news-wrapper-img">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<img src="../../assets/img/news/news2.jpg" alt="">&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="news-wrapper-text">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<p style="color: #eec13f">青岛海信史总莅临华视美达考察</p>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<p style="color: #7f7f7f">2018-12-19</p>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<p style="text-indent:2em;line-height: 28px;">2018年12月19日，青岛海信电器营销股份有限公司&ndash;&gt;-->
+                                <!--&lt;!&ndash;史全华先生莅临华视美达郑州公司进行考察，就双方技术&ndash;&gt;-->
+                                <!--&lt;!&ndash;合作达成共识</p>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="new-more" @click="goToNews">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<img src="../../assets/img/news/more.png" alt="">&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--<div class="news">-->
+                    <!--<div class="news-wrapper">-->
+                        <!--<div class="news-wrapper-img">-->
+                            <!--<img src="../../assets/img/news/news1.jpg" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="news-wrapper-text">-->
+                            <!--<p style="color: #eec13f">2019年新品发布暨渠道伙伴联营大会</p>-->
+                            <!--<p style="color: #7f7f7f">2019-08-29</p>-->
+                            <!--<p style="text-indent:2em;line-height: 28px;">2019年8月29日，深圳华视美达信息技术有限公司-->
+                                <!--召开《2019年新品发布暨合作渠道伙伴联营大会》。</p>-->
+                        <!--</div>-->
+                        <!--<div class="new-more" @click="goToNews">-->
+                            <!--<img src="../../assets/img/news/more.png" alt="">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 </template>
 
