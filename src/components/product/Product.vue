@@ -44,7 +44,7 @@
     }
     .nav {
         position: absolute;
-        left: 20%;
+        left: 10%;
     }
     .nav li {
         list-style-type: none;
@@ -71,6 +71,6 @@
 
     .produce-item {
         width: 70%;
-        margin-left: calc(20% + 120px);
+        margin-left: calc(10% + 120px);
     }
 </style>

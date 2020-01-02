@@ -17,6 +17,8 @@ import Business from '../components/business/Business'
  */
 import ServiceRange from '../components/service/ServiceRange'
 
+import ServiceItemDetail from '../components/service/ServiceItem'
+
 /**
  * 联系我们
  */
@@ -88,6 +90,10 @@ const routes = [
     {
         path: '/serviceRange',
         component: ServiceRange
+    },
+    {
+        path: '/serviceItemDetail',
+        component: ServiceItemDetail
     },
     {
         path: '/contactUs',

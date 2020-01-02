@@ -21,5 +21,15 @@
 <style scoped>
     .product-h6 {
         clear: both;
+        background-color: #fff;
+        width: 100%;
+    }
+    .product-h6 .item-one{
+        width: 100%;
+        height: auto;
+    }
+    .product-h6 .item-one img{
+        width: 100%;
+        height: auto;
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="service-item" style="background-color: #fff">
+        <div class="service-item" style="background-color: #fff" @click="goDetails(1)">
             <div class="service-container">
                 <div class="service-container-img">
                     <img src="../../assets/img/service/range1.png" alt="">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item" style="background-color: #efe6d6">
+        <div class="service-item" style="background-color: #efe6d6" @click="goDetails(2)">
             <div class="service-container">
                 <div>
                     <div class="container-wrapper left">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item" style="background-color: #fff">
+        <div class="service-item" style="background-color: #fff" @click="goDetails(3)">
             <div class="service-container">
                 <div class="service-container-img">
                     <img src="../../assets/img/service/range3.png" alt="">
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item" style="background-color: #efe6d6">
+        <div class="service-item" style="background-color: #efe6d6" @click="goDetails(4)">
             <div class="service-container">
                 <div>
                     <div class="container-wrapper left">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item" style="background-color: #fff">
+        <div class="service-item" style="background-color: #fff" @click="goDetails(5)">
             <div class="service-container">
                 <div class="service-container-img">
                     <img src="../../assets/img/service/range5.png" alt="">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="service-item" style="background-color: #efe6d6">
+        <div class="service-item" style="background-color: #efe6d6" @click="goDetails(6)">
             <div class="service-container">
                 <div>
                     <div class="container-wrapper left">
@@ -105,7 +105,13 @@
 
 <script>
     export default {
-        name: "ServiceRange"
+        name: "ServiceRange",
+        methods: {
+            goDetails(index) {
+                this.$router.push({path: '/serviceItemDetail', query: {sId: index}});
+                // console.log(index)
+            }
+        }
     }
 </script>
 
@@ -113,35 +119,47 @@
     .container {
         width: 100%;
     }
+
     .service-item {
         width: 50%;
         height: 300px;
-        margin:  0 auto;
+        margin: 0 auto;
         display: flex;
     }
+
     .service-container {
         flex: 1;
         padding-top: 15px;
         cursor: pointer;
     }
+
     .service-container-img {
         width: 80%;
         margin: 0 auto;
     }
+
+    .service-container-img img {
+        width: 100%;
+        height: auto;
+    }
+
     .container-wrapper {
         margin-bottom: 10px;
         padding-top: 20px;
         margin-top: 65px;
     }
+
     .left {
         padding-left: 50px;
     }
+
     .service-container span {
         color: #ebb700;
         display: inline-block;
         margin-left: 20px;
         margin-top: -20px;
     }
+
     .service-item:hover {
         /*从中心开始放大*/
         transform: scale(1.1);

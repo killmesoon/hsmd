@@ -50,6 +50,7 @@
         float: left;
         width: 50%;
         text-align: center;
+        padding-top: 15px;
     }
     .nav a:hover {
         color: #ebb700;

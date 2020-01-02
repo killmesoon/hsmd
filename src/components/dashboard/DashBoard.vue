@@ -1,11 +1,11 @@
 <template>
     <div class="wrapper">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide"><img width="100%" :src="banner" alt=""></div>
-            <div class="swiper-slide"><img width="100%" :src="banner1" alt=""></div>
-            <div class="swiper-slide"><img width="100%" :src="banner2" alt=""></div>
-            </div>
+        <div class="lunbo-box">
+            <el-carousel indicator-position="none" :height="imgHeight">
+                <el-carousel-item class="lunbo-box-item" v-for="(item,index) in bannerImg" :key="index">
+                    <img ref="image" style="width: 100%" :src="item.src" class="lunbotu" alt="轮播图">
+                </el-carousel-item>
+            </el-carousel>
         </div>
 
 
@@ -217,13 +217,7 @@
 </template>
 
 <script>
-    import Swiper from 'swiper'
     import HsScroll from '../scroll/HsScroll'
-    //banner导入
-    const banner = require("../../assets/img/BANNER.jpg")
-    const banner1 = require("../../assets/img/BANNER1.jpg")
-    const banner2 = require("../../assets/img/BANNER2.jpg")
-
 
     const item1Url = require("../../assets/img/item/item1.png")
     const item1UrlActive = require("../../assets/img/item/item1-pick.png")
@@ -256,6 +250,11 @@
         name: "DashBoard",
         data() {
             return {
+                bannerImg: [
+                    { src: require("../../assets/img/BANNER.jpg") },
+                    { src: require("../../assets/img/BANNER1.jpg") },
+                    { src: require("../../assets/img/BANNER2.jpg") },
+                ],
                 item1Src: item1Url,
                 item2Src: item2Url,
                 item3Src: item3Url,
@@ -267,17 +266,17 @@
                 serviceItem4:s4Url,
                 serviceItem5:s5Url,
                 serviceItem6:s6Url,
-                banner: banner,
-                banner1: banner1,
-                banner2: banner2
+                imgHeight:"",
+//                banner: banner,
+//                banner1: banner1,
+//                banner2: banner2
             }
         },
         mounted() {
-            new Swiper('.swiper-container', {
-                loop: true,
-                autoplay: true,
-                speed: 1000
-            })
+            this.imgLoad();
+            window.addEventListener("resize", () => {
+                this.imgHeight = this.$refs.image[0].height+'px';
+            });
         },
         methods: {
             goToProduct(index) {
@@ -383,11 +382,16 @@
                         this.serviceItem6 = s6Url;
                         break;
                 }
-            }
+            },
+            imgLoad() {
+                // 获取窗口宽度*图片的比例，定义页面初始的轮播图高度
+                let _w = document.documentElement.clientWidth || document.body.clientWidth;
+                this.imgHeight = _w*760/1920+'px';
+            },
         },
         components: {
             HsScroll
-        }
+        },
     }
 </script>
 

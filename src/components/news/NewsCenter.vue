@@ -26,21 +26,21 @@
             </div>
             <div class="news-container-item">
                 <div class="item-container">
-                    <div class="container-right" @click="openItem(2)">
-                        <div style="position: relative">
-                            <div class="text-container-left">
-                                <img src="../../components/contact/image/H..png" alt="">
-                            </div>
-                            <div class="text-container-right">
-                                <p>青岛海信史总莅临华视美达考察</p>
-                                <p style="color: #7f7f7f">2018-12-19</p>
-                            </div>
-                            <div class="text-container-down" style="top: 70px">
-                                <p style="line-height: 25px;">
-                                    2018年12月19日，青岛海信电器营销股份有限公司<br/>史全华先生莅临华视美达郑州公司进行考察，就双方技术<br/>合作达成共识</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div class="container-right" @click="openItem(2)">-->
+                        <!--<div style="position: relative">-->
+                            <!--<div class="text-container-left">-->
+                                <!--<img src="../../components/contact/image/H..png" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="text-container-right">-->
+                                <!--<p>青岛海信史总莅临华视美达考察</p>-->
+                                <!--<p style="color: #7f7f7f">2018-12-19</p>-->
+                            <!--</div>-->
+                            <!--<div class="text-container-down" style="top: 70px">-->
+                                <!--<p style="line-height: 25px;">-->
+                                    <!--2018年12月19日，青岛海信电器营销股份有限公司<br/>史全华先生莅临华视美达郑州公司进行考察，就双方技术<br/>合作达成共识</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
                     <div class="container-right center" @click="openItem(3)">
                         <div style="position: relative">
                             <div class="text-container-left">
@@ -77,13 +77,15 @@
                 :title="title"
                 :visible.sync="dialogVisible"
                 width="30%">
+            <div style="max-height: 500px;overflow: auto">
             <div style="text-align: center"><img width="100%" :src="dialogImg" alt=""></div>
             <div style="margin-top: 20px">
                 <p style="text-indent: 2em">{{newsText}}</p>
             </div>
             <span slot="footer" class="dialog-footer">
-    <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+    <!--<el-button type="primary" @click="dialogVisible = false">确 定</el-button>-->
   </span>
+            </div>
         </el-dialog>
     </div>
 </template>

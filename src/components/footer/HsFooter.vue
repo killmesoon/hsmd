@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-
+        <img src="../../assets/img/footer.jpg" alt="">
     </div>
 </template>
 
@@ -12,9 +12,11 @@
 
 <style scoped>
 .footer {
-    height: 369px;
+    height: auto;
     width: 100%;
-    background:url("../../assets/img/footer.jpg") no-repeat;
-    background-size: 100% 100%;
+}
+.footer img{
+    width: 100%;
+    height:auto;
 }
 </style>

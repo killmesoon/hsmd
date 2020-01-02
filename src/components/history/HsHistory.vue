@@ -1,7 +1,7 @@
 <template>
     <div class="history-wrapper">
-        <div class="history"><img src="../../assets/img/history/up.png" alt=""></div>
-        <div class="history"><img src="../../assets/img/history/down.png" alt=""></div>
+        <div class="history"><img src="../../assets/img/history/down.jpg" alt=""></div>
+        <div class="history"><img src="../../assets/img/history/history.jpg" alt=""></div>
     </div>
 </template>
 
@@ -18,5 +18,6 @@
     .history {
         width: 1250px;
         margin: 0 auto;
+        background-color: #fff;
     }
 </style>
